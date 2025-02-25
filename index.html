@@ -65,65 +65,18 @@
             to { opacity: 1; }
         }
 
-        .video-container video {
-            width: 100%;
-            max-width: 700px;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-        .video-container video:hover {
-            transform: scale(1.05);
-        }
-
-        .slideshow-container {
-            position: relative;
-            max-width: 600px;
-            margin: 20px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
         .slideshow-container img {
             width: 100%;
+            max-width: 600px;
+            height: auto;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            animation: fadeInImage 1.5s forwards;
-        }
-
-        @keyframes fadeInImage {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
-        }
-
-        .prev, .next {
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            border: none;
-            padding: 12px;
-            font-size: 22px;
-            cursor: pointer;
-            border-radius: 50%;
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
     <div class="container">
-      <h1>📖 Chắp cánh ước mơ</h1>
+        <h1>📖 Chắp cánh ước mơ</h1>
         <p>Báo tường của lớp 12A11 kỉ niệm ngày ra trường.</p>
         
         <h2>📖 Nội dung</h2>
@@ -149,7 +102,8 @@
 
             <h3>💌 Lời nhắn gửi đến tương lai</h3>
             <p>Hãy sống hết mình, hãy theo đuổi ước mơ và hãy nhớ rằng chúng ta đã từng có một thanh xuân thật đẹp. Dù đi đâu, làm gì, đừng quên những lời hứa ngày hôm nay: Một ngày nào đó, chúng ta sẽ gặp lại – trưởng thành, thành công và vẫn là những người bạn tuyệt vời của nhau! ❤️</p>
-        </div>
+        </div>>
+
         <h2>📷 Thư viện ảnh</h2>
         <div class="slideshow-container">
             <button class="prev" onclick="changeSlide(-1)">⬅</button>
@@ -163,6 +117,10 @@
                <source src="video.mp4" type="video/mp4">
             </video>
         </div>
+        
+        <h2>📞 Liên hệ</h2>
+        <p><strong>Chịu trách nhiệm nội dung:</strong> Nguyễn Thị Huyền Diệu</p>
+        <p><strong>Email liên hệ:</strong> <a href="mailto:hieunbk45@gmail.com">hieunbk45@gmail.com</a></p>
     </div>
 
     <script>
